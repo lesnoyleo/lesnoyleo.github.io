@@ -7,7 +7,9 @@
     background: url(data/forest.jpg);
     background-repeat: no-repeat; 
     background-size: 100% 100%; 
+
 }
+
 .secondBlock{
     min-height: 400px;
     display: flex;
@@ -24,6 +26,22 @@
     align-items: center;
     background-color: white;
 }
+.thridBlock_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.thridBlock_1 div{
+
+    height: 50%;
+}
+.thridBlock_1 p{
+    text-align: center;
+
+}
+.thridBlock_2{
+    text-align: center;
+}
 .secondBlock_1{
     max-width: 800px;
 }
@@ -39,4 +57,14 @@
 }
 H1{
     color: white;
+}
+img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
