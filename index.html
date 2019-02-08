@@ -4,16 +4,85 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 </head>
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark" id="menu">
         <a class="navbar-brand" href="#">LAZUKA EVGENY</a>
-        <a class="navbar-brand" href="#">ABOUT ME</a>
-        <a class="navbar-brand" href="#">INTERESTS</a>
+        <a class="navbar-brand" href="#ex1">ABOUT ME/INTERESTS</a>
     </nav>
     <div class="firstBlock">
-
+        <div class="myFace">
+                <a href="https://ibb.co/wJW6Jrf"><img src="https://i.ibb.co/wJW6Jrf/MyFace.jpg" alt="MyFace" border="0"></a>
+        </div>
+        <div>
+            <h1>
+                Lazuka Evgeny Sergeevich
+            </h1>
+        </div>
+        <div class="line">
+        </div>
     </div>
+        <div class="secondBlock" id="ex1">
+            <div>
+                <h4>
+                    ABOUT ME
+                </h4>
+            </div>
+            <div class="lineBlack" >
+            </div>
+            <div class="secondBlock_1">
+                <p>
+                        I am 20 years old. I live in Minsk. A graduate of the "Minsk College of Entrepreneurship" specialty technician-programmer. 
+                        Since childhood, he loved and was interested in everything related to electronics and computers. 
+                        If you need to disassemble or assemble something on a PC, as well as set up Windows or clean your computer from viruses and not only,
+                        feel free to contact me. I love animals, nature. One of my most favorite hobbies are various games. 
+                        And no matter what genre it is, mmo rpg, action game is important that they are made with soul. 
+                        I try to devote all my free time to self-improvement. Read the cult book or understand some interesting task is always happy.
+                </p>
+            </div>
+    </div>            
+   
+    <div class="thridBlock" >
+            <div>
+                <h4>
+                    INTERESTS
+                </h4>
+            </div>
+            <div class="lineBlack">
+    
+            </div>
+            <div class="secondBlock_1">
+                <p>
+                        I am 20 years old. I live in Minsk. A graduate of the "Minsk College of Entrepreneurship" specialty technician-programmer. 
+                        Since childhood, he loved and was interested in everything related to electronics and computers. 
+                        If you need to disassemble or assemble something on a PC, as well as set up Windows or clean your computer from viruses and not only,
+                        feel free to contact me. I love animals, nature. One of my most favorite hobbies are various games. 
+                        And no matter what genre it is, mmo rpg, action game is important that they are made with soul. 
+                        I try to devote all my free time to self-improvement. Read the cult book or understand some interesting task is always happy.
+                </p>
+            </div>
+        </div>
+
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#menu").on("click","a", function (event) {
+                    //отменяем стандартную обработку нажатия по ссылке
+                    event.preventDefault();
+
+                    //забираем идентификатор бока с атрибута href
+                    var id  = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                        top = $(id).offset().top;
+                    
+                    //анимируем переход на расстояние - top за 1500 мс
+                    $('body,html').animate({scrollTop: top}, 1000);
+	                });
+                });
+        </script>   
 </body>
 </html>

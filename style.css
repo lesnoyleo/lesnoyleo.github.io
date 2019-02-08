@@ -1,4 +1,42 @@
 .firstBlock{
     min-height: 400px;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(data/forest.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+}
+.secondBlock{
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.thridBlock{
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.secondBlock_1{
+    max-width: 800px;
+}
+.line{
+    min-width: 600px;
+    min-height: 5px;
+    background-color: white;
+}
+.lineBlack{
+    min-width: 600px;
+    min-height: 5px;
+    background-color: black; 
+}
+H1{
+    color: white;
 }
