@@ -45,6 +45,11 @@
 .secondBlock_1{
     max-width: 800px;
 }
+.fourBlock{
+    min-height: 500px;
+    background-color: whitesmoke;
+    text-align: center;
+}
 .line{
     min-width: 600px;
     min-height: 5px;
