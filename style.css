@@ -73,6 +73,9 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.fiveBlock img:hover{
+    transform: rotate(180deg);
+}
 .verticalLine{
     min-width: 5px;
     min-height: 300px;
