@@ -49,6 +49,34 @@
     min-height: 500px;
     background-color: whitesmoke;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.fourBlock a{
+    color: black;
+    font-size: 18px;
+}
+
+
+.fiveBlock{
+    min-height: 500px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.verticalLine{
+    min-width: 5px;
+    min-height: 300px;
+    background-color: black;
 }
 .line{
     min-width: 600px;
