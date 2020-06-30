@@ -26,5 +26,6 @@ function accelerometerUpdate(event) {
 		aX = -aX - 180;
 	}
 	document.querySelector("#block").style.transform="rotate("+aX+"deg)";
-
+	
+	console.log('test');
 }
