@@ -16,11 +16,10 @@
 
 
         function accelerometerUpdate(event) {
-           var aX = event.accelerationIncludingGravity.x*10;
-           var aY = event.accelerationIncludingGravity.y*10;
-           var aZ = event.accelerationIncludingGravity.z*10;
+           var aX = event.accelerationIncludingGravity.x*100;
+           var aY = event.accelerationIncludingGravity.y*100;
 
-            document.querySelector("#cross").style.left = aX + 'px';
+            document.querySelector("#cross").style.left = -aX + 'px';
             document.querySelector("#cross").style.top = aY + 'px';
 
             // ix aY is negative, switch rotation
@@ -28,7 +27,7 @@
                 aX = -aX - 180;
         }
 
-        console.log('test1');
+        console.log('test2');
     }
 </script>
 </body>
