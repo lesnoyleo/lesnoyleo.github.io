@@ -1,31 +1,18 @@
-<html>
+﻿<html>
 <head>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>test</title>
 </head>
 <body>
-    <h1>HTML5 Accelerometer</h1>
+	<div style='display: flex; height: 100%;'>
+		<div style='margin: auto'>
+    			<i id="cross" class="fa fa-dot-circle-o" style='position: relative;'></i>
+		</div>
+	</div>
 
-    <section>
-        Accelerometer detected? <span id="acc"></span><br>
-        alpha X: <input type="text" readonly id="x" value="" /><br>
-        alpha Y: <input type="text" readonly id="y" value="" /><br>
-        alpha Z: <input type="text" readonly id="z" value="" /><br>
-    </section>
-
-    <div id="block">↑</div>
     <script>
-    if (window.DeviceMotionEvent == undefined) {
-        //No accelerometer is present. Use buttons. 
-        document.querySelector("#acc").textContent = "NO";
-        document.querySelector("#acc").className = "no";
-
-        }
-        else {
-            document.querySelector("#acc").textContent = "YES";
-            document.querySelector("#acc").className = "yes";
-            window.addEventListener("devicemotion", accelerometerUpdate, true);
-        }
+        window.addEventListener("devicemotion", accelerometerUpdate, true);
 
 
         function accelerometerUpdate(event) {
@@ -33,17 +20,15 @@
            var aY = event.accelerationIncludingGravity.y*10;
            var aZ = event.accelerationIncludingGravity.z*10;
 
-            document.querySelector("#x").value = aX;
-            document.querySelector("#y").value = aY;
-            document.querySelector("#z").value = aZ;
+            document.querySelector("#cross").style.left = aX + 'px';
+            document.querySelector("#cross").style.top = aY + 'px';
 
             // ix aY is negative, switch rotation
             if (aY <0) {
                 aX = -aX - 180;
         }
-        document.querySelector("#block").style.transform="rotate("+aX+"deg)";
 
-        console.log('test');
+        console.log('test1');
     }
 </script>
 </body>
