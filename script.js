@@ -6,7 +6,8 @@ canvas.height = 400;
 
 const english = ["A", "B" ,"C" ,"D" ,"E" ,"F" ,"G" ,"H" ,"I" ,"J" ,"K" ,"L" ,"M" ,"N" ,"O" ,"P" ,"Q" ,"R" ,"S" ,"T" ,"U" ,"V" ,"W" ,"X" ,"Y" ,"Z"];
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-const alphabet = [...english, ...numbers];
+const kana = ["ぁ", "あ", "ぃ", "ぇ", "ぎ", "の", "な", "イ", "カ", "キ", "ネ", "へ", "ジ", "ォ", "ナ", "ャ", "ラ", "ン", "ヹ", "", "ニ", "ば", "み", "ず", "ぉ", "が", "ナ", "ゑ", "ぷ"];
+const alphabet = [...kana, ...english, ...numbers];
 const fontSize = 16;
 const countColumns = canvas.width / fontSize;
 const rainDrops = [];
