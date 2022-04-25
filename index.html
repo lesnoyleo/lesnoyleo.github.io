@@ -5,13 +5,14 @@
 </head>
 <body>
     <nav class="header">
-        <a href="#ex1">ABOUT ME /</a>
-        <a href="#ex2">INTERESTS</a>
-
+        <div class="header__links">
+            <a href="#about-me">ABOUT ME /</a>
+            <a href="#interests">INTERESTS</a>
+        </div>
     </nav>
     <div class="header-with-matrix">
     <canvas id='canvas'></canvas>
-    <div class="firstBlock">
+    <div class="matrix-block">
         <div class="myFace">
             <a href="https://www.linkedin.com/in/eugene-lazuka-8906561b7/"><img src="https://i.ibb.co/wJW6Jrf/MyFace.jpg" alt="MyFace" border="0"></a>
         </div>
@@ -20,20 +21,20 @@
                 Lazuka Eugene
             </h1>
         </div>
-        <div class="line">
+        <div class="separate-white-line">
         </div>
     </div>
     </div>
     
-    <div class="secondBlock" id="ex1">
+    <div class="about-me" id="about-me">
             <div class="d-flex">
                 <h1>
                     ABOUT ME
                 </h1>
             </div>
-            <div class="lineBlack" >
+            <div class="separate-black-line" >
             </div>
-            <div class="secondBlock_1">
+            <div class="about-me__introduce">
                 <p>
                         I am 23 years old. Live in Minsk. A graduate of the "Minsk College of Entrepreneurship" specialty technician-programmer. 
                         Since childhood, was loved and interested in everything related to electronics and computers. 
@@ -45,16 +46,16 @@
             </div>
     </div>            
    <br>
-    <div class="thridBlock" id="ex2">
+    <div class="interests" id="interests">
             <div class="d-flex">
                 <h1>
                     INTERESTS
                 </h1>
             </div>
-            <div class="lineBlack">
+            <div class="separate-black-line">
             </div>
             <br>
-            <div class="thridBlock_1">
+            <div class="interests__first-block">
                 <div>
                         <p><strong>Front-end develop</strong></p>
                         <menu>
@@ -88,7 +89,7 @@
                           </menu>
                 </div>
             </div>
-            <div class="thridBlock_2">
+            <div class="interests__second-block">
                     <p><strong>Various programming languages</strong></p>
                      C#,TypeScript<br>
                      SQL<br>
@@ -97,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="fourBlock">
+    <div class="padawans-tasks">
         <div>
             <h2>Complete Tasks</h2>
             <menu>
@@ -110,8 +111,8 @@
                 <li><a href="https://github.com/lesnoyleo/PadawansTask6"> PadawansTask 6</a> </li>
             </menu>
         </div>
-        <div class="verticalLine">
-
+        <div class="trigger-zone__vertical-line">
+            <div class="vertical-line"></div>
         </div>
         <div>
             <h2>Complete Tasks</h2>
@@ -126,9 +127,11 @@
             </menu>
         </div>
     </div>
-    <div class="fiveBlock">
-        <a href="https://www.codewars.com/users/lesnoy_leo"><img src="https://courses.softlab.ntua.gr/Images/Various/codewars.png" alt="MyFace" border="0"></a>
+    <div class="link-to-padawans">
+        <a href="https://www.codewars.com/users/lesnoy_leo"><img src="https://courses.softlab.ntua.gr/Images/Various/codewars.png"></a>
         <h2>⇐⇐⇐ Codewars Link</h2>
+    </div>
+    <div class="animation-block">
     </div>
     <div class="go-to-top">
         <a href="#">↑</a>

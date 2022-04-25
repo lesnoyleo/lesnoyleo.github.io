@@ -34,7 +34,7 @@ const draw = () => {
   }
 };
 
-let refreshDrag = setInterval(draw, 30);
+let refreshDrag = setInterval(draw, 40);
 
 let toggler = false;
 

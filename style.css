@@ -1,11 +1,13 @@
-.header-with-matrix{
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.header-with-matrix {
   height: 400px;
 }
-canvas {
-  position: absolute;
-  z-index: 1;
-}
-.firstBlock {
+.matrix-block {
   display: flex;
   position: absolute;
   justify-content: flex-start;
@@ -15,17 +17,17 @@ canvas {
   width: 100vw;
   z-index: 1000;
 }
-.firstBlock H1 {
+.matrix-block H1 {
   color: white;
   padding-left: 2rem;
 }
-.firstBlock .line {
+.matrix-block .separate-white-line {
   width: 100%;
 }
-.firstBlock .myFace{
+.matrix-block .myFace {
   padding: 2rem 0 0 2rem;
 }
-.secondBlock {
+.about-me {
   min-height: 400px;
   display: flex;
   justify-content: space-around;
@@ -33,7 +35,10 @@ canvas {
   align-items: center;
   background-color: whitesmoke;
 }
-.thridBlock {
+.about-me__introduce {
+  max-width: 800px;
+}
+.interests {
   min-height: 400px;
   display: flex;
   justify-content: space-around;
@@ -41,42 +46,47 @@ canvas {
   align-items: center;
   background-color: white;
 }
-.thridBlock_1 {
+.interests__first-block {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
   padding: 0 1rem;
+  border-bottom: 1px solid black;
 }
-.thridBlock_1 div {
+.interests__first-block div {
   flex-basis: 100%;
 }
-.thridBlock_1 p {
+.interests__first-block p {
   text-align: center;
 }
-.thridBlock_2 {
+.interests__second-block {
   text-align: center;
 }
-.secondBlock_1 {
-  max-width: 800px;
-}
-.fourBlock {
+
+.padawans-tasks {
   min-height: 500px;
   background-color: whitesmoke;
-  text-align: center;
   display: flex;
   justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-.fourBlock a {
+.padawans-tasks h2{
+  text-align: center;
+}
+.padawans-tasks a {
   color: black;
   font-size: 1.25rem;
 }
+.padawans-tasks li{
+  white-space: nowrap;
+}
+.padawans-tasks menu{
+  width: 100%;
+  padding-left: 10px;
+}
 
-.fiveBlock {
-  min-height: 500px;
+.link-to-padawans {
+  min-height: 300px;
   background-color: white;
   text-align: center;
   display: flex;
@@ -86,20 +96,35 @@ canvas {
   -ms-flex-align: center;
   align-items: center;
 }
-.fiveBlock img:hover {
+.link-to-padawans img:hover {
   transform: rotate(180deg);
 }
-.verticalLine {
+.animation-block {
+  min-height: 500px;
+  background-image: url("src/image/image.png");
+}
+.trigger-zone__vertical-line{
+  height: 100%;
+  width: 50px;
+  opacity: 1;
+  display: flex;
+  transition: 2s all;
+}
+.trigger-zone__vertical-line:hover{
+  transform: rotate(180deg);
+}
+.vertical-line {
+  margin: auto;
   min-width: 0.25rem;
   min-height: 300px;
   background-color: black;
 }
-.line {
+.separate-white-line {
   min-width: 600px;
   min-height: 0.25rem;
   background-color: white;
 }
-.lineBlack {
+.separate-black-line {
   min-width: 600px;
   min-height: 0.25rem;
   background-color: black;
@@ -108,7 +133,7 @@ canvas {
   display: block;
   position: fixed;
   top: 95vh;
-  left: 2rem;;
+  left: 2rem;
   transform: scale(2);
 }
 img {
@@ -122,7 +147,8 @@ img:hover {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-size: larger;
@@ -133,13 +159,28 @@ a {
   text-decoration: none;
   color: black;
 }
-.fourBlock li {
-  white-space: nowrap;
+canvas {
+  position: absolute;
+  z-index: 1;
 }
-menu {
-  all: inherit;
-}
-.d-flex{
+
+.d-flex {
   display: flex;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  min-height: 500px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
