@@ -104,11 +104,12 @@
   background-image: url("src/image/image.png");
 }
 .trigger-zone__vertical-line{
-  height: 100%;
-  width: 50px;
+  height: 300px;
+  width: 300px;
   opacity: 1;
   display: flex;
   transition: 2s all;
+  position: absolute;
 }
 .trigger-zone__vertical-line:hover{
   transform: rotate(180deg);
